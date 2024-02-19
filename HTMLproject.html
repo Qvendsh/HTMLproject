@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        .lato{
+            font-family: "Lato", sans-serif;
+            font-weight:  400;
+            font-style: normal;
+        }
+        .Montserrat{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+        body{
+            background-color: #19191B;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        header{
+            margin: 0;
+            height: 15vh;
+            display: flex;
+        }
+        .img1{
+            height: 4vh;
+            width: 1.9vw;
+        }
+        .headerpart1{
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 28px;
+        }
+        .headerpart2{
+            width: 40vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10vw;
+        }
+        .headerpart3{
+            width: 30vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header>div>a{
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px;
+            color: gray;
+        }
+        header>div>input{
+            width: 10vw;
+            height: 5vh;
+            font-size: 16px;
+            color: white;
+            background-color:#19191B;
+            border: 1px solid #FFF;
+            border-radius: 5px;
+
+        }
+        main{
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+        }
+        .info1{
+            width: 32vw;
+            height: 65vh;
+            margin-right: 6vw;
+        }
+        .img2{
+            width: 37vw;
+            height: 100%;
+            margin-left: 3vw;
+        }
+        .button1{
+            margin-top: 5vh;
+        }
+        article{
+            width: 100vw;
+            height: 120vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        .spacefortitle1{
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .part1{
+            height: 20vh;
+            width: 25vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+            font-family: Lato;
+            /*margin-left: 4vw;*/
+        }
+        .part2{
+            height: 20vh;
+            width: 32vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 18px;
+            font-family: Lato;
+            /*margin-right: 2vw;*/
+        }
+        .img3{
+            width: 80vw;
+            height: 80vh;
+            margin: 0;
+        }
+        .spaceforinfo3{
+            width: 100vw;
+            height: 110vh;
+            display: flex;
+            justify-content: center;
+        }
+        .info3{
+            width: 80vw;
+            height: 110vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .spacefortitle2{
+            width: 80vw;
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10vh;
+        }
+        .title2{
+            width: 30vw;
+            height: 20vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            text-align: center;
+            font-family: Lato;
+        }
+        .row1{
+            width: 80vw;
+            height: 30vh;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 10vh ;
+        }
+        .row2{
+            width: 80vw;
+            height: 30vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .cell{
+            width: 20vw;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /*justify-content: center;*/
+        }
+        .photocell1{
+            width: 4.8vw;
+            height: 4.8vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #5454D41A;
+        }
+        .photocell2{
+            width: 4.8vw;
+            height: 4.8vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #F040371A;
+        }
+        .photocell3{
+            width: 4.8vw;
+            height: 4.8vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #FEDC5A1A;
+        }
+        .photocell4{
+            width: 4.8vw;
+            height: 4.8vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #FEDC5A1A;
+        }
+        .photocell5{
+            width: 4.8vw;
+            height: 4.8vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #5454D41A;
+        }
+        .photocell6{
+            width: 4.8vw;
+            height: 4.8vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #F040371A;
+        }
+        .spaceforimg{
+            width: 2vw;
+            height: 2vw;
+        }
+        .titlestyle{
+            color: white;
+            margin:0;
+            font-family: Lato;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 0;
+        }
+        .subscribtion{
+            color: rgba(255, 255, 255, 0.70);
+            text-align: center;
+            font-family: Lato;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+
+        }
+        .aboutus{
+            height: 40vh;
+            width: 100vw;
+            color: white;
+            font-family: Lato;
+            font-size: 58px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-left: 10vw;
+        }
+        .spacefortheothercells{
+            width: 100vw;
+            height: 60vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .theothercells{
+            width: 27vw;
+            height: 30vh;
+            border:20px solid #1E1E20;
+            border-radius: 12px;
+        }
+        .almostlastsection{
+            width: 100vw;
+            height: 50vh;
+            background-color: rgba(30, 30, 32, 0.50);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .almostlastsection>div>p{
+            color: white;
+            font-size: 40px;
+            font-family: Lato;
+            font-weight: 400;
+        }
+        .almostlastsection>div>input{
+            color: white;
+            border-radius: 5px;
+            width: 10vw;
+            height: 7vh;
+            font-size: 18px;
+            font-family: Lato;
+            font-weight: 700;
+            background-color: #5454D4;
+        }
+        .section{
+            width: 40vw;
+        }
+        footer{
+            height: 15vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footerpart2{
+            color: rgba(255, 255, 255, 0.70);
+            width: 20vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: right;
+            font-size: 16px;
+            margin-right: 5vw;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="headerpart1">
+        <div class="img1"><img src="https://s3-alpha-sig.figma.com/img/2d41/4e6f/aa8cb7873c9b8d6294e697a5db1a664b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MaVGPx~-4MJ9QQJTxl7YpRHIZnr1EJEliWsri5VOszKdI~ZmZABUPjcN3TPQEcFqhcrblbxy~KLLAec32Cx~hwwpLG39j-Lc4LLMY9XsnY-BG-crVWrU6iLVV~IiyEgCNBeBAjqu789U2Xkpd95GH-1uEHUhflnEfTbk6YlQnD1JA3D68c2W0c4lUHLI6HfBIF4g18rmwk8kd2PT5z0vZqhhDjFYS1u~nIIfAli07TnAWlbGxm5Lde2pcXc5okZo3is91O040C-CeYFQxvdVZVCBjbwaJs~~MbuRXlpZ1WSSE5fUnKUAqP4MS6k6bsLpy6Wj7zCb1rE1rKDObO5t5A__" alt="logo" width="100%" height="100%"></div>
+        <div class="Montserrat">Enver</div>
+    </div>
+        <div class="headerpart2">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Our Project</a>
+            <a href="#">About us</a>
+        </div>
+        <div class="headerpart3"> <input type="submit" value="Contact us"></div>
+</header>
+<main>
+    <div class="info1">
+        <div class="lato"><p style="color: white; font-size: 60px; font-style: normal">Build Your Awesome Platform</p></div>
+        <div class="lato"><p style="color: rgba(255, 255, 255, 0.70); line-height: 30px; ">Enver studio is a digital studio that offers several services such as UI/UX Design to developers, we will provide the best service for those of you who use our services.</p></div>
+        <div class="button1"><input style="background-color: #5454D4; color: white; border-radius: 4px; width: 10vw; height: 6vh; font-size: 16px " type="submit" value="Our Services"></div>
+    </div>
+    <div class="img2"><img src="https://s3-alpha-sig.figma.com/img/6c85/6a1f/4575493d2bebef7ee94cebb811d6d0be?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VnHI2aj743AeKkVzvxDlR4XwDNRPRbuxWPWeBHEh7NZwanUlM0DAZjuQ6qz2wDFGE3bAifFuL12emR9ylBrU~sh~gDnXrKGsrVg0poCMuYajA04AH0ay0YvrghMgfJ7xiOjyp0rX-tKHZLZJcma81fGTmL~XZES8n5vMPLpxzRrbFwZEJ6dXhUH1Q7PmwgRPEB3U8RoMFMZ8tRHfa~K2Ru5PsTm3uY39eM2Knxk82ZED5wJhbNI2GkLzWt3YYx6tYabXiPORWdygAxXvRX38~-drNeBIfis-1vihCJjrUR8QBuHlimyFjGJeJvRl4ZBmpOvHbim7dpa8zQU4k1eXJQ__" alt="photo" width="100%" height="100%"></div>
+</main>
+<article>
+    <div class="spacefortitle1">
+        <div class="part1"><p>Why Enver Is The Best Choice?</p></div>
+        <div class="part2"><p>Watch this one minute video so you understand why you should use our services!</p></div>
+    </div>
+    <div class="img3"><img src="https://s3-alpha-sig.figma.com/img/11ea/f0fa/ba4d811ef0e03a77959e60d62a5dc155?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kp1aA8yHVxzpTubtswCjkIDM3cSRohQ5ZSHW5FJYVndgNQoR~m9xK0YKyolB8oKsjPbyJAoR7GGpdZ4jIXuBd-PRSwWzGnGhSKfskMJljKIQ42YSsqrvFhQ7EUcHIivY3EKh~WVp8Lom7gVlE-XVYtdz8KfpJN60PzbLcW9mIS0FFTwBGGTQbX3gfsR1C1pp-8gH~SzZL-QZA-dOf6ARn~74EEurJKXWtrwgnTDTJKUSKYPjlwakOm0-tqyVwPwx3QealUo0QOeRgYamX2ARNHZ21nlCr8t9SBLQXlw0GRdCUs3zevnQeQ5TuuzY-TqrtI-qIWitfpe7FqEG7mU~ng__" alt="meeting" width="100%" height="100%"></div>
+</article>
+<div class="spaceforinfo3">
+    <div class="info3">
+        <div class="spacefortitle2">
+            <div class="title2"><p>The Service We Provide For You</p></div>
+        </div>
+        <div class="row1">
+            <div class="cell">
+                <div class="photocell1">
+                    <div class="spaceforimg"><img src="img1.jpg" alt="#" width="100%" height="100%"></div>
+                </div>
+                <div class="titlestyle"><p>Development</p></div>
+                <div class="subscribtion"><p>Create a platform with the best and coolest quality from us.</p></div>
+            </div>
+            <div class="cell">
+                <div class="photocell2">
+                    <div class="spaceforimg"><img src="img2.jpg" alt="#" width="100%" height="100%"></div>
+                </div>
+                <div class="titlestyle"><p>UI/UX Designer</p></div>
+                <div class="subscribtion"><p>We provide UI/UX Design services, and of course with the best quality</p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="photocell3">
+                    <div class="spaceforimg"><img src="img3.jpg" alt="#" width="100%" height="100%"></div>
+                </div>
+                <div class="titlestyle"><p>Graphik Designer</p></div>
+                <div class="subscribtion"><p>We provide Graphic Design services, with the best designers</p></div>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="cell">
+                <div class="photocell4">
+                    <div class="spaceforimg"><img src="img4.jpg" alt="#" width="100%" height="100%"></div>
+                </div>
+                <div class="titlestyle"><p>Motion Graphik</p></div>
+                <div class="subscribtion"><p>Create a platform with the best and coolest quality from us.</p></div>
+            </div>
+            <div class="cell">
+                <div class="photocell5">
+                    <div class="spaceforimg"><img src="img5.jpg" alt="#" width="100%" height="100%"></div>
+                </div>
+                <div class="titlestyle"><p>Photography</p></div>
+                <div class="subscribtion"><p>We provide Photography services, and of course with the best quality</p>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="photocell6">
+                    <div class="spaceforimg"><img src="img6.jpg" alt="#" width="100%" height="100%"></div>
+                </div>
+                <div class="titlestyle"><p>Videography</p></div>
+                <div class="subscribtion"><p>Create a platform with the best and coolest quality from us.</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="aboutus"><p>Our Awesome Portofolio</p></div>
+<div class="spacefortheothercells">
+    <div class="theothercells"><img src="https://s3-alpha-sig.figma.com/img/667d/6b62/5138a85285479f3d4bfbea8425a211fd?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Eh7XUN8~vRD0rw9o~TEEGF7j3~DtIYFcuArJkcZGetK2BcT9Ds0Vr2M~GyaYo5oaGRdkm4ZkOsOUeoA1WP6aA2DZXO7B0n9uLZxPl4kK3o7de0iJM7cQ0OBd0GmF3m3sdGf2DAYm7K8pn3jZRZACtHpdCgBExO6tEBhqBo3CdA6ykLV5xSyQYLzZguQXPXLSfKzjvZeNGs0NV5w4nOru7cVMYbvKopbIdkaB3zK4OnwZ0TyUjMMG81IU~45MQGQckxnUMKOioVNxXomArcPjbSEgsG2TlYJMoUABcV9i3jDWeXgqCwGMgLGIlBwD9yPB2ZNDyeW96rQz2Jqr3AAyhA__" alt="#" width="100%" height="100%"></div>
+    <div class="theothercells"><img src="https://s3-alpha-sig.figma.com/img/6fd1/cefb/2dc7aff89630532e4ca5d8d2ad2215c9?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qGR5baaA9SZa0Emed6MRCBiB2J40WRnvL6c7x5k51EUV6dbnKdUON2Q7uPwthjCBe0kWWam7VRJ0wh4Zvp2NBWSmII3RNjstVKd37PtR6SQeUVGN8h-owxufiSbKKtZZp0inoUTwTyZNelSBDM~55lAmqEytpV4ZgLfA-sZrQ9uW2IATelRFUgsVUdja6FFcW~MDGF3rarmiP3zf~S1ya5Pq-SNke6sU0r4Y5kFctvGx4wRF4c3wkpI4ouKoURcWFJxPh8OWAxfb1Y9qDl8TfvHwcuQyS88c2jP5Stz~~C4nhezn3Sh~CnNtLUCioYt~UpNIAMDB1fQ0mU2IlexGtQ__" alt="#" width="100%" height="100%"></div>
+    <div class="theothercells"><img src="https://s3-alpha-sig.figma.com/img/b39d/967f/248b97ab71518dee7f8b39cd2ef4e08f?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C7JipFZOFNq7s8Pn08YWGb2Tkje1s~FIIiOOPkNX5V5ZqoglZULz9MjkoM-sdK~fZLvErWe79WYR5~g6wfaRfUX7YXjvBk~vuSc~ehmdMgkoo3GRtDRm4OhtfbVvdfhGIFSodukXKsAwJ-IckxHkCh9fstUiDaKo9GD8-ajFYpPad9tme7BBwriGyQXbLStYYHufZ4GadGJBk01xOpJ9Al8iCwlf0QfUglR7S6nc9zkMn-4onkGfuiuMb5a2V-qm7w3D11235VdXNjt7P0yVNicyKJv0-ut0cSc-BQKKOti-8p03Ui0jxz-~H8dnTssMYFzdgtLuxlejIyoF20y3Lw__" alt="#" width="100%" height="100%"></div>
+</div>
+<div class="almostlastsection">
+    <div class="section"><p>Contact us for the service you want to use</p></div>
+    <div><input type="submit" value="Contact us"></div>
+</div>
+<footer>
+    <div class="headerpart1">
+        <div class="img1"><img src="https://s3-alpha-sig.figma.com/img/2d41/4e6f/aa8cb7873c9b8d6294e697a5db1a664b?Expires=1708905600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MaVGPx~-4MJ9QQJTxl7YpRHIZnr1EJEliWsri5VOszKdI~ZmZABUPjcN3TPQEcFqhcrblbxy~KLLAec32Cx~hwwpLG39j-Lc4LLMY9XsnY-BG-crVWrU6iLVV~IiyEgCNBeBAjqu789U2Xkpd95GH-1uEHUhflnEfTbk6YlQnD1JA3D68c2W0c4lUHLI6HfBIF4g18rmwk8kd2PT5z0vZqhhDjFYS1u~nIIfAli07TnAWlbGxm5Lde2pcXc5okZo3is91O040C-CeYFQxvdVZVCBjbwaJs~~MbuRXlpZ1WSSE5fUnKUAqP4MS6k6bsLpy6Wj7zCb1rE1rKDObO5t5A__" alt="logo" width="100%" height="100%"></div>
+        <div class="Montserrat">Enver</div>
+    </div>
+    <div class="footerpart2"><p>© 2024 Enver, All Rights Reserved</p></div>
+</footer>
+</body>
+</html>
